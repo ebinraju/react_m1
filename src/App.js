@@ -21,12 +21,12 @@ function App() {
             FallbackComponent={() => <ApplicationError />}
           >
             <Routes>
-              <Route path='/' element={<Navigation />}>
+              <Route path='/p1' element={<Navigation />}>
                 <Route path="/home" element={<HomePage />} />
                 <Route path="/dashboard" element={<Dashboard />} />
               </Route>
-              <Route path="/login" element={<Login />} />
-              <Route path="/unauthorized" element={<Unauthorized />} />
+              <Route path="/p1/login" element={<Login />} />
+              <Route path="/p1/unauthorized" element={<Unauthorized />} />
             </Routes>
           </ErrorBoundary>
         </BrowserRouter>
